@@ -3,20 +3,20 @@ local function enable_transparency()
 end
 return {
     {
-	"folke/tokyonight.nvim",
-	config = function()
-	    vim.cmd.colorscheme "tokyonight"
-	    enable_transparency()
-	end
+        "Mofiqul/dracula.nvim",
+        config = function()
+            vim.cmd.colorscheme("dracula")
+            enable_transparency()
+        end
     },
     {
-	"nvim-lualine/lualine.nvim",
-	dependencies = {
-	    "nvim-tree/nvim-web-devicons",
-	},
-	opts = {
-	    theme = 'tokyonight',
-	}
+        "nvim-lualine/lualine.nvim",
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        opts = {
+            theme = 'dracula',
+        }
     },
 
 }
